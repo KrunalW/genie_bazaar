@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Online shopping product">
+    <meta name="keywords" content="Shopping, Carpenter, Electrician, Housekeeping, Cook, Driver, Plumbing">
+    <meta name="author" content="Krunal Wankhede">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Genie Bazaar - Form</title>
+
+    <link rel="icon" href="img/favicon.png" type="image/png" > 
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img width="150" src="img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline m-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="What services do you needed?"
+                        aria-label="Search">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-lock"></i> Login</a>
+                    </li>
+                    <li class="nav-item signup">
+                        <a class="nav-link" href="#"><i class="fas fa-user-plus"></i> Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> (0)</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-8 form-box">
+                    <h2>Post Repair & Maintainace Requirements</h2>
+                    <form method="POST" id="signup-form" class="signup-form" enctype="multipart/form-data">
+                        <h3>
+                            1st Step
+                        </h3>
+                        <fieldset>
+                            <div class="form-row">
+                                <div class="form-group-flex">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label">Category</label>
+                                        <div class="col-sm-9">
+                                            <select name="first_name" id="first_name">
+                                                <option value="default">Select</option>
+                                                <option value="01">Carpenter</option>
+                                                <option value="02">Electrician</option>
+                                                <option value="03">Housekeeping</option>
+                                                <option value="04">Cook</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label">Poject Title</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="last_name" id="last_name"
+                                                placeholder="Project Title" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label">Project
+                                            Description</label>
+                                        <div class="col-sm-9">
+                                            <textarea name="project_desc" id="project-desc" cols="30"
+                                                rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <h3>
+                            2d Step
+                        </h3>
+                        <fieldset>
+                            <div class="form-row">
+                                <div class="form-group-flex">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label">Upload Document</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-file">
+                                                <input type="file" class="inputfile" name="your_picture"
+                                                    id="your_picture" onchange="readURL(this);"
+                                                    data-multiple-caption="{count} files selected" multiple />
+                                                <label for="your_picture">
+                                                    <input class="inputValue" type="text" value="" disabled
+                                                        placeholder="No file Choosen">
+                                                    <span class="file-button">Choose file</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label">Upload Video</label>
+                                        <div class="col-sm-9">
+                                            <div class="form-file">
+                                                <input type="file" class="inputfile" name="your_picture"
+                                                    id="your_picture" onchange="readURL(this);"
+                                                    data-multiple-caption="{count} files selected" multiple />
+                                                <label for="your_picture">
+                                                    <input class="inputValue" type="text" value="" disabled
+                                                        placeholder="No file Choosen">
+                                                    <span class="file-button">Choose file</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <h3>
+                            3rd Step
+                        </h3>
+                        <fieldset>
+                            <div class="form-row">
+                                <div class="form-group-flex">
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label">Floor/Building</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="" id="" placeholder="Floor/Building" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label">Locality</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="" id="" placeholder="Locality" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label">Post Code</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" name="" id="" placeholder="Post Code" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="staticEmail" class="col-sm-3 col-form-label">Post Code</label>
+                                        <div class="col-sm-9">
+                                            <input type="date" name="" id="" placeholder="Bid End Date" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
